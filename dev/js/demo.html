@@ -1,0 +1,24 @@
+<iframe id="information-screen"></iframe>
+<iframe id="game-screen"></iframe>
+
+<style>
+    iframe {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        border: none;
+    }
+</style>
+
+<script>
+    window.addEventListener('load', setFrameSources)
+
+    async function setFrameSources () {
+      document.getElementById('game-screen').setAttribute('src', 'http://localhost:8080/')
+      await sleep(100)
+      document.getElementById('information-screen').setAttribute('src', 'http://localhost:8080/')
+    }
+
+    function sleep(milliseconds) {
+      return new Promise(resolve => setTimeout(resolve, milliseconds));
+    }
+</script>

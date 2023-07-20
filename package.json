@@ -1,0 +1,32 @@
+{
+  "name": "filter-test",
+  "version": "0.0.1",
+  "dependencies": {
+    "easeljs": "git+https://github.com/CreateJS/EaselJS.git",
+    "mtlg-core": "git+https://gitlab.com/mtlg-framework/mtlg-core.git",
+    "mtlg-gameframe": "gitlab:mtlg-framework/mtlg-gameframe",
+    "mtlg-modul-lightparse": "git+https://gitlab.com/mtlg-framework/mtlg-moduls/mtlg-modul-lightparse.git",
+    "mtlg-modul-menu": "git+https://gitlab.com/mtlg-framework/mtlg-moduls/mtlg-modul-menu.git",
+    "mtlg-module-datacollector-xapi": "git+https://gitlab.com/mtlg-framework/mtlg-moduls/mtlg-module-datacollector-xapi.git",
+    "mtlg-module-dd": "gitlab:mtlg-framework/mtlg-moduls/mtlg-modul-distributeddisplays",
+    "mtlg-module-remoteteacher": "git+https://gitlab.com/mtlg-framework/mtlg-moduls/mtlg-modul-remoteteacher.git",
+    "mtlg-moduls-utilities": "git+https://gitlab.com/mtlg-framework/mtlg-moduls/mtlg-modul-utilities.git",
+    "preloadjs": "git+https://github.com/CreateJS/PreloadJS.git",
+    "soundjs": "git+https://github.com/CreateJS/SoundJS.git",
+    "tweenjs": "git+https://github.com/CreateJS/TweenJS.git"
+  },
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "yarn": "^1.22.19",
+    "yarn-upgrade-all": "^0.7.1"
+  },
+  "scripts": {
+    "start": "node ./node_modules/mtlg-module-dd/backend/server.js & node ./node_modules/.bin/mtlg serve module"
+  }
+}
