@@ -27,6 +27,7 @@
     "yarn-upgrade-all": "^0.7.1"
   },
   "scripts": {
-    "start": "node ./node_modules/mtlg-module-dd/backend/server.js & node ./node_modules/.bin/mtlg serve module"
+    "start": "node ./node_modules/mtlg-module-dd/backend/server.js & node ./node_modules/.bin/mtlg serve module",
+    "build": "node ./node_modules/.bin/mtlg build module"
   }
 }
